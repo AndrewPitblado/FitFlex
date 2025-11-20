@@ -62,7 +62,7 @@ const GymMap = ({ machines, onZoneClick }) => {
           <Info className="w-6 h-6" />
           Gym Floor Plan & Heat Map
         </h2>
-        <p className="text-sm text-gray-600">Click on any equipment to view tutorials and alternatives</p>
+        <p className="text-sm text-gray-600">Click on a zone to view equipment details and availability.</p>
       </div>
 
       {/* Legend */}
