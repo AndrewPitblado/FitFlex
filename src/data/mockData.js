@@ -3,11 +3,13 @@ export const gymMachines = {
   // Cardio Zone
   "treadmill-01": {
     id: "treadmill-01",
-    name: "Treadmill 1",
+    name: "Treadmill",
     type: "Cardio",
     zone: "cardio",
+    count: 10,
+    occupied: 2,
     status: "free",
-    currentUsage: 0,
+    currentUsage: 20,
     coordinates: { x: 50, y: 80 },
     tutorial: {
       videoUrl: "https://www.youtube.com/watch?v=placeholder-treadmill",
@@ -20,51 +22,17 @@ export const gymMachines = {
       ]
     }
   },
-  "treadmill-02": {
-    id: "treadmill-02",
-    name: "Treadmill 2",
-    type: "Cardio",
-    zone: "cardio",
-    status: "moderate",
-    currentUsage: 45,
-    coordinates: { x: 110, y: 80 },
-    tutorial: {
-      videoUrl: "https://www.youtube.com/watch?v=placeholder-treadmill",
-      instructions: [
-        "Step onto the side rails",
-        "Attach the safety clip to your clothing",
-        "Press the Start button and begin walking",
-        "Gradually increase speed using the controls",
-        "Press Stop when finished and wait for belt to stop"
-      ]
-    }
-  },
-  "treadmill-03": {
-    id: "treadmill-03",
-    name: "Treadmill 3",
-    type: "Cardio",
-    zone: "cardio",
-    status: "busy",
-    currentUsage: 85,
-    coordinates: { x: 170, y: 80 },
-    tutorial: {
-      videoUrl: "https://www.youtube.com/watch?v=placeholder-treadmill",
-      instructions: [
-        "Step onto the side rails",
-        "Attach the safety clip to your clothing",
-        "Press the Start button and begin walking",
-        "Gradually increase speed using the controls",
-        "Press Stop when finished and wait for belt to stop"
-      ]
-    }
-  },
+  
+
   "elliptical-01": {
     id: "elliptical-01",
     name: "Elliptical 1",
     type: "Cardio",
     zone: "cardio",
+    count: 5,
+    occupied: 0,
     status: "free",
-    currentUsage: 10,
+    currentUsage: 0,
     coordinates: { x: 50, y: 200 },
     tutorial: {
       videoUrl: "https://www.youtube.com/watch?v=placeholder-elliptical",
@@ -82,8 +50,10 @@ export const gymMachines = {
     name: "Stationary Bike 1",
     type: "Cardio",
     zone: "cardio",
+    count: 6,
+    occupied: 3,
     status: "moderate",
-    currentUsage: 55,
+    currentUsage: 50,
     coordinates: { x: 110, y: 200 },
     tutorial: {
       videoUrl: "https://www.youtube.com/watch?v=placeholder-bike",
@@ -103,8 +73,10 @@ export const gymMachines = {
     name: "Flat Bench Press",
     type: "Weights",
     zone: "weights",
+    count: 4,
+    occupied: 3,
     status: "busy",
-    currentUsage: 90,
+    currentUsage: 75,
     coordinates: { x: 550, y: 100 },
     tutorial: {
       videoUrl: "https://www.youtube.com/watch?v=placeholder-bench",
@@ -119,11 +91,13 @@ export const gymMachines = {
   },
   "squat-01": {
     id: "squat-01",
-    name: "Squat Rack 1",
+    name: "Squat Rack",
     type: "Weights",
     zone: "weights",
-    status: "free",
-    currentUsage: 0,
+    count: 6,
+    occupied: 4,
+    status: "moderate",
+    currentUsage: 67,
     coordinates: { x: 650, y: 100 },
     tutorial: {
       videoUrl: "https://www.youtube.com/watch?v=placeholder-squat",
@@ -141,8 +115,10 @@ export const gymMachines = {
     name: "Deadlift Platform 1",
     type: "Weights",
     zone: "weights",
+    count: 2,
+    occupied: 1,
     status: "moderate",
-    currentUsage: 40,
+    currentUsage: 50,
     coordinates: { x: 600, y: 220 },
     tutorial: {
       videoUrl: "https://www.youtube.com/watch?v=placeholder-deadlift",
@@ -160,8 +136,10 @@ export const gymMachines = {
     name: "Dumbbell Area",
     type: "Weights",
     zone: "weights",
+    count: 10,
+    occupied: 7,
     status: "busy",
-    currentUsage: 75,
+    currentUsage: 70,
     coordinates: { x: 700, y: 220 },
     tutorial: {
       videoUrl: "https://www.youtube.com/watch?v=placeholder-dumbbells",
@@ -181,8 +159,10 @@ export const gymMachines = {
     name: "Leg Press Machine",
     type: "Machines",
     zone: "machines",
+    count: 3,
+    occupied: 0,
     status: "free",
-    currentUsage: 15,
+    currentUsage: 0,
     coordinates: { x: 300, y: 450 },
     tutorial: {
       videoUrl: "https://www.youtube.com/watch?v=placeholder-legpress",
@@ -200,6 +180,8 @@ export const gymMachines = {
     name: "Lat Pulldown",
     type: "Machines",
     zone: "machines",
+    count: 4,
+    occupied: 2,
     status: "moderate",
     currentUsage: 50,
     coordinates: { x: 450, y: 450 },
@@ -219,6 +201,8 @@ export const gymMachines = {
     name: "Chest Press Machine",
     type: "Machines",
     zone: "machines",
+    count: 5,
+    occupied: 4,
     status: "busy",
     currentUsage: 80,
     coordinates: { x: 200, y: 450 },
@@ -238,8 +222,10 @@ export const gymMachines = {
     name: "Leg Extension Machine",
     type: "Machines",
     zone: "machines",
+    count: 3,
+    occupied: 0,
     status: "free",
-    currentUsage: 5,
+    currentUsage: 0,
     coordinates: { x: 350, y: 520 },
     tutorial: {
       videoUrl: "https://www.youtube.com/watch?v=placeholder-legext",
@@ -257,8 +243,10 @@ export const gymMachines = {
     name: "Cable Cross Machine",
     type: "Machines",
     zone: "machines",
-    status: "moderate",
-    currentUsage: 35,
+    count: 4,
+    occupied: 3,
+    status: "busy",
+    currentUsage: 75,
     coordinates: { x: 550, y: 450 },
     tutorial: {
       videoUrl: "https://www.youtube.com/watch?v=placeholder-cable",
