@@ -3,7 +3,7 @@ export const gymMachines = {
   // Cardio Zone
   "treadmill-01": {
     id: "treadmill-01",
-    name: "Treadmill",
+    name: "Treadmills",
     type: "Cardio",
     zone: "cardio",
     count: 10,
@@ -26,7 +26,7 @@ export const gymMachines = {
 
   "elliptical-01": {
     id: "elliptical-01",
-    name: "Elliptical 1",
+    name: "Ellipticals",
     type: "Cardio",
     zone: "cardio",
     count: 5,
@@ -47,7 +47,7 @@ export const gymMachines = {
   },
   "bike-01": {
     id: "bike-01",
-    name: "Stationary Bike 1",
+    name: "Stationary Bikes",
     type: "Cardio",
     zone: "cardio",
     count: 6,
