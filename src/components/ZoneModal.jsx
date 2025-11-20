@@ -74,10 +74,14 @@ const ZoneModal = ({ zone, isOpen, onClose }) => {
               {/* Equipment Grid */}
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 {zone.equipment.map((equipment) => {
-                  const statusColor = equipment.currentUsage < 30 
-                    ? 'border-green-500 bg-green-50' 
-                    : equipment.currentUsage < 70 
-                    ? 'border-yellow-500 bg-yellow-50' 
+                  const occupiedCount = equipment.occupied || 0;
+                  const totalCount = equipment.count || 1;
+                  const availableCount = totalCount - occupiedCount;
+
+                  const statusColor = availableCount > totalCount * 0.5
+                    ? 'border-green-500 bg-green-50'
+                    : availableCount > 0
+                    ? 'border-yellow-500 bg-yellow-50'
                     : 'border-red-500 bg-red-50';
 
                   return (
@@ -96,17 +100,17 @@ const ZoneModal = ({ zone, isOpen, onClose }) => {
                       
                       <div className="text-xs text-center">
                         <span className={`font-medium ${
-                          equipment.currentUsage < 30 
-                            ? 'text-green-700' 
-                            : equipment.currentUsage < 70 
-                            ? 'text-yellow-700' 
+                          availableCount > totalCount * 0.5
+                            ? 'text-green-700'
+                            : availableCount > 0
+                            ? 'text-yellow-700'
                             : 'text-red-700'
                         }`}>
-                          {equipment.currentUsage < 30 
-                            ? 'Available' 
-                            : equipment.currentUsage < 70 
-                            ? `${equipment.currentUsage}% busy` 
-                            : 'Busy'}
+                          {availableCount === totalCount
+                            ? 'All Available'
+                            : availableCount > 0
+                            ? `${occupiedCount}/${totalCount} Occupied`
+                            : 'All Busy'}
                         </span>
                       </div>
                     </button>
