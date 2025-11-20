@@ -12,7 +12,7 @@ const ZoneModal = ({ zone, isOpen, onClose }) => {
   if (equipment.length === 0) {
     return (
       <>
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-40" onClick={onClose} />
+        <div className="fixed inset-0 bg-black/30 backdrop-blur-sm z-40" onClick={onClose} />
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
           <div className="bg-white rounded-lg shadow-xl p-6">
             <p>No equipment found in this zone.</p>
@@ -41,14 +41,14 @@ const ZoneModal = ({ zone, isOpen, onClose }) => {
     <>
       {/* Backdrop */}
       <div 
-        className="fixed inset-0 bg-black bg-opacity-50 z-40 transition-opacity"
+        className="fixed inset-0 bg-black/30 backdrop-blur-sm z-40 transition-opacity"
         onClick={onClose}
       />
       
       {/* Modal */}
       <div className="fixed inset-0 z-50 overflow-y-auto">
         <div className="flex min-h-full items-center justify-center p-4">
-          <div className="relative bg-white rounded-lg shadow-xl w-full max-w-3xl max-h-[90vh] overflow-y-auto">
+          <div className="relative bg-white rounded-lg shadow-xl shadow-gray-500/50 w-full max-w-3xl max-h-[90vh] overflow-y-auto">
             {/* Header */}
             <div className="sticky top-0 bg-white border-b border-gray-200 px-6 py-4 flex items-center justify-between">
               <div>
