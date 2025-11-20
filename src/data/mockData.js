@@ -238,6 +238,28 @@ export const gymMachines = {
       ]
     }
   },
+  "leg-curl": {
+    id: "leg-curl",
+    name: "Leg Curl Machine",
+    type: "Machines",
+    zone: "machines",
+    count: 3,
+    occupied: 1,
+    status: "moderate",
+    currentUsage: 33,
+    coordinates: { x: 350, y: 520 },
+    tutorial: {
+      videoUrl: "https://www.youtube.com/watch?v=placeholder-legext",
+      instructions: [
+        "Sit in the machine and adjust the back pad",
+        "Adjust the lower pad to rest on top of your ankles",
+        "Adjust the thigh pad to fit snugly against your thighs",
+        "Curl legs back as far as possible",
+        "Hold briefly at the bottom",
+        "Raise with control to starting position"
+      ]
+    }
+  },
   "cable-machine": {
     id: "cable-machine",
     name: "Cable Cross Machine",
