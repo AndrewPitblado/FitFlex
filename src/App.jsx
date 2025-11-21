@@ -91,6 +91,7 @@ function App() {
             <p className="text-xs mt-2 text-gray-400">
               This is a demonstration interface with simulated data
             </p>
+            <a href="https://www.flaticon.com/free-icons/gym" title="gym icons">Gym icons created by Irfansusanto20 - Flaticon</a>
           </div>
         </footer>
 
