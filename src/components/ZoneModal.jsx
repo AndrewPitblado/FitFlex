@@ -1,6 +1,7 @@
 import { X, Dumbbell, Activity } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import Equipment from './Equipment';
+import { gymMachines } from '../data/mockData';
 
 const ZoneModal = ({ zone, isOpen, onClose }) => {
   const navigate = useNavigate();
@@ -91,7 +92,7 @@ const ZoneModal = ({ zone, isOpen, onClose }) => {
                       className={`p-4 border-2 rounded-lg transition-all hover:shadow-lg hover:scale-105 ${statusColor}`}
                     >
                        <div className="flex justify-center mb-3">
-                        <Dumbbell className="w-16 h-16 text-gray-400" />
+                        <img src={gymMachines[equipment.id]?.image} alt={equipment.name} className="w-16 h-16" />
                       </div>
                       
                       <h4 className="font-semibold text-gray-900 text-sm mb-1 text-center">
