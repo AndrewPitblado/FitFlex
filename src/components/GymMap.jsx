@@ -1,7 +1,9 @@
 import { Info } from 'lucide-react';
 import { useState } from 'react';
 import ZoneModal from './ZoneModal';
-
+import gymImage from '../assets/gym.png';
+import chestPressImage from '../assets/chest.png';
+import legCurlImage from '../assets/leg-curl.png';
 
 const GymMap = ({ machines, onZoneClick }) => {
     const [selectedZone, setSelectedZone] = useState(null);
@@ -169,11 +171,17 @@ const GymMap = ({ machines, onZoneClick }) => {
 
           {/* Machines Zone */}
           <g id="zone-machines" className="cursor-pointer" onClick={() => handleZoneClick('machines', 'Machine Zone')}>
+        <image href={gymImage} x="30" y="320" width="200" height="250" />
+        <image href={chestPressImage} x="300" y="320" width="200" height="250" />
+        <image href={legCurlImage} x="550" y="320" width="200" height="250" />
   <rect 
     x="30" y="320" width="740" height="250" 
-    className={`${getZoneStatus('machines')} transition-colors`}
+    className={`${getZoneStatus('machines')} opacity-70 transition-colors`}
     strokeWidth="2" rx="8" 
+    
   />
+  
+  
   <text x="400" y="350" className="text-lg font-bold fill-purple-700 text-anchor-middle pointer-events-none" textAnchor="middle">MACHINE ZONE</text>
             
             {/* Chest Press */}

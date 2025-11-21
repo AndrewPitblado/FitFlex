@@ -1,4 +1,8 @@
 // Mock data for gym machines and equipment
+import gymImg from '../assets/gym.png';
+import chestImg from '../assets/chest.png';
+import legCurlImg from '../assets/leg-curl.png';
+
 export const gymMachines = {
   // Cardio Zone
   "treadmill-01": {
@@ -178,6 +182,7 @@ export const gymMachines = {
   "lat-pull": {
     id: "lat-pull",
     name: "Lat Pulldown",
+    image: gymImg,
     type: "Machines",
     zone: "machines",
     count: 4,
@@ -199,6 +204,7 @@ export const gymMachines = {
   "chest-press": {
     id: "chest-press",
     name: "Chest Press Machine",
+    image: chestImg,
     type: "Machines",
     zone: "machines",
     count: 5,
@@ -241,6 +247,7 @@ export const gymMachines = {
   "leg-curl": {
     id: "leg-curl",
     name: "Leg Curl Machine",
+    image: legCurlImg,
     type: "Machines",
     zone: "machines",
     count: 3,
