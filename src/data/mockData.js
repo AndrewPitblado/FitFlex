@@ -8,6 +8,10 @@ import cableMachineImg from '../assets/machine.png';
 import treadmillImg from '../assets/treadmill.png';
 import ellipticalImg from '../assets/elliptical.png';
 import bikeImg from '../assets/stationary-bike.png';
+import benchImg from '../assets/bench-press.png';
+import squatImg from '../assets/squat-racks.png';
+import deadliftImg from '../assets/powerlifting.png';
+import dumbellImg from '../assets/dumbell.png';
 
 export const gymMachines = {
   // Cardio Zone
@@ -86,6 +90,7 @@ export const gymMachines = {
     name: "Flat Bench Press",
     type: "Weights",
     zone: "weights",
+    image: benchImg,
     count: 4,
     occupied: 3,
     status: "busy",
@@ -107,6 +112,7 @@ export const gymMachines = {
     name: "Squat Rack",
     type: "Weights",
     zone: "weights",
+    image: squatImg,
     count: 6,
     occupied: 4,
     status: "moderate",
@@ -128,6 +134,7 @@ export const gymMachines = {
     name: "Deadlift Platform 1",
     type: "Weights",
     zone: "weights",
+    image: deadliftImg,
     count: 2,
     occupied: 1,
     status: "moderate",
@@ -149,6 +156,7 @@ export const gymMachines = {
     name: "Dumbbell Area",
     type: "Weights",
     zone: "weights",
+    image: dumbellImg,
     count: 10,
     occupied: 7,
     status: "busy",
