@@ -4,6 +4,8 @@ import ZoneModal from './ZoneModal';
 import gymImage from '../assets/gym.png';
 import chestPressImage from '../assets/chest.png';
 import legCurlImage from '../assets/leg-curl.png';
+import treadmillImage from '../assets/treadmill.png';
+import benchpressImage from '../assets/bench-press.png';
 
 const GymMap = ({ machines, onZoneClick }) => {
     const [selectedZone, setSelectedZone] = useState(null);
@@ -102,20 +104,22 @@ const GymMap = ({ machines, onZoneClick }) => {
           <rect width="800" height="600" fill="url(#grid)" />
 
           {/* Cardio Zone */}
-          <g id="zone-cardio" className='cursor-pointer' onClick={() => handleZoneClick('cardio', 'Cardio Zone')}>
+          <g id="zone-cardio" className='cursor-pointer group' onClick={() => handleZoneClick('cardio', 'Cardio Zone')}>
+            <image href={treadmillImage} x="50" y="40" width="200" height="250" />
             <rect 
                 x="30" y="30" width="250" height="250" 
-                className={`${getZoneStatus('cardio')} transition-colors`}
+                className={`${getZoneStatus('cardio')} opacity-60 group-hover:opacity-20 transition-all duration-300`}
                 strokeWidth="2" rx="8" 
             />
             <text x="155" y="60" className="text-lg font-bold fill-blue-700 text-anchor-middle pointer-events-none" textAnchor="middle">CARDIO ZONE</text>
             </g>
 
           {/* Weights Zone */}
-          <g id="zone-weights" className="cursor-pointer" onClick={() => handleZoneClick('weights', 'Free Weights Zone')}>
+          <g id="zone-weights" className="cursor-pointer group" onClick={() => handleZoneClick('weights', 'Free Weights Zone')}>
+            <image href={benchpressImage} x="545" y="40" width="200" height="250" />
             <rect 
                 x="520" y="30" width="250" height="250" 
-                className={`${getZoneStatus('weights')} transition-colors`}
+                className={`${getZoneStatus('weights')} opacity-60 group-hover:opacity-20 transition-all duration-300`}
                 strokeWidth="2" rx="8" 
             />
             <text x="645" y="60" className="text-lg font-bold fill-orange-700 text-anchor-middle pointer-events-none" textAnchor="middle">FREE WEIGHTS</text>
@@ -170,13 +174,13 @@ const GymMap = ({ machines, onZoneClick }) => {
           </g>
 
           {/* Machines Zone */}
-          <g id="zone-machines" className="cursor-pointer" onClick={() => handleZoneClick('machines', 'Machine Zone')}>
+          <g id="zone-machines" className="cursor-pointer group" onClick={() => handleZoneClick('machines', 'Machine Zone')}>
         <image href={gymImage} x="30" y="320" width="200" height="250" />
         <image href={chestPressImage} x="300" y="320" width="200" height="250" />
         <image href={legCurlImage} x="550" y="320" width="200" height="250" />
   <rect 
     x="30" y="320" width="740" height="250" 
-    className={`${getZoneStatus('machines')} opacity-70 transition-colors`}
+    className={`${getZoneStatus('machines')} opacity-60 group-hover:opacity-20 transition-all duration-300`}
     strokeWidth="2" rx="8" 
     
   />
