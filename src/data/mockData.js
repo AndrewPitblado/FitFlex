@@ -97,7 +97,7 @@ export const gymMachines = {
     currentUsage: 75,
     coordinates: { x: 550, y: 100 },
     tutorial: {
-      videoUrl: "https://www.youtube.com/watch?v=placeholder-bench",
+      videoUrl: "https://youtube.com/embed/hWbUlkb5Ms4?si=W1GJhG4n_q63t0Gq",
       instructions: [
         "Lie flat on the bench with feet on floor",
         "Grip the bar slightly wider than shoulder-width",
@@ -119,7 +119,7 @@ export const gymMachines = {
     currentUsage: 67,
     coordinates: { x: 650, y: 100 },
     tutorial: {
-      videoUrl: "https://www.youtube.com/watch?v=placeholder-squat",
+      videoUrl: "https://youtube.com/embed/iZTxa8NJH2g?si=3wgmwBSyQKpzN3nV",
       instructions: [
         "Set the bar at upper chest height",
         "Step under the bar and position on upper back",
@@ -141,7 +141,7 @@ export const gymMachines = {
     currentUsage: 50,
     coordinates: { x: 600, y: 220 },
     tutorial: {
-      videoUrl: "https://www.youtube.com/watch?v=placeholder-deadlift",
+      videoUrl: "https://youtube.com/embed/McCDaAsSeRc?si=5p9EbSL-nin0ONEy",
       instructions: [
         "Stand with feet hip-width apart, bar over mid-foot",
         "Bend down and grip the bar outside your legs",
@@ -187,7 +187,7 @@ export const gymMachines = {
     currentUsage: 0,
     coordinates: { x: 300, y: 450 },
     tutorial: {
-      videoUrl: "https://www.youtube.com/watch?v=placeholder-legpress",
+      videoUrl: "https://youtube.com/embed/QwBvFgAVOTo?si=Ky7FTPeBkHVMf3GU",
       instructions: [
         "Sit in the machine with back against the pad",
         "Place feet shoulder-width apart on platform",
@@ -209,7 +209,7 @@ export const gymMachines = {
     currentUsage: 50,
     coordinates: { x: 450, y: 450 },
     tutorial: {
-      videoUrl: "https://www.youtube.com/watch?v=placeholder-latpull",
+      videoUrl: "https://youtube.com/embed/hnSqbBk15tw?si=uvoHWPW95aIJHP7h",
       instructions: [
         "Adjust the knee pad to secure your legs",
         "Grip the bar wider than shoulder-width",
@@ -231,7 +231,7 @@ export const gymMachines = {
     currentUsage: 80,
     coordinates: { x: 200, y: 450 },
     tutorial: {
-      videoUrl: "https://www.youtube.com/watch?v=placeholder-chestpress",
+      videoUrl: "https://youtube.com/embed/sqNwDkUU_Ps?si=vNMXTerFx7L1_xVq",
       instructions: [
         "Adjust seat so handles are at chest height",
         "Grip the handles with palms facing down",
@@ -253,7 +253,7 @@ export const gymMachines = {
     currentUsage: 0,
     coordinates: { x: 350, y: 520 },
     tutorial: {
-      videoUrl: "https://www.youtube.com/watch?v=placeholder-legext",
+      videoUrl: "https://youtube.com/embed/IqUhWKkpub8?si=Z0_GMZgmZkQa0Qbo",
       instructions: [
         "Sit in the machine and adjust the back pad",
         "Place ankles behind the lower pad",
@@ -275,7 +275,7 @@ export const gymMachines = {
     currentUsage: 33,
     coordinates: { x: 350, y: 520 },
     tutorial: {
-      videoUrl: "https://www.youtube.com/watch?v=placeholder-legext",
+      videoUrl: "https://youtube.com/embed/t9sTSr-JYSs",
       instructions: [
         "Sit in the machine and adjust the back pad",
         "Adjust the lower pad to rest on top of your ankles",
