@@ -5,12 +5,16 @@ import legCurlImg from '../assets/leg-curl.png';
 import legPressImg from '../assets/leg-press.png';
 import latPulldownImg from '../assets/lat-pulldown.png';
 import cableMachineImg from '../assets/machine.png';
+import treadmillImg from '../assets/treadmill.png';
+import ellipticalImg from '../assets/elliptical.png';
+import bikeImg from '../assets/stationary-bike.png';
 
 export const gymMachines = {
   // Cardio Zone
   "treadmill-01": {
     id: "treadmill-01",
     name: "Treadmills",
+    image: treadmillImg,
     type: "Cardio",
     zone: "cardio",
     count: 10,
@@ -36,6 +40,7 @@ export const gymMachines = {
     name: "Ellipticals",
     type: "Cardio",
     zone: "cardio",
+    image: ellipticalImg,
     count: 5,
     occupied: 0,
     status: "free",
@@ -57,6 +62,7 @@ export const gymMachines = {
     name: "Stationary Bikes",
     type: "Cardio",
     zone: "cardio",
+    image: bikeImg,
     count: 6,
     occupied: 3,
     status: "moderate",
