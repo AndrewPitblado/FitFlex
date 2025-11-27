@@ -1,7 +1,10 @@
 // Mock data for gym machines and equipment
 import gymImg from '../assets/gym.png';
-import chestImg from '../assets/chest.png';
+import chestImg from '../assets/chest-press.png';
 import legCurlImg from '../assets/leg-curl.png';
+import legPressImg from '../assets/leg-press.png';
+import latPulldownImg from '../assets/lat-pulldown.png';
+import cableMachineImg from '../assets/machine.png';
 
 export const gymMachines = {
   // Cardio Zone
@@ -163,6 +166,7 @@ export const gymMachines = {
     name: "Leg Press Machine",
     type: "Machines",
     zone: "machines",
+    image: legPressImg,
     count: 3,
     occupied: 0,
     status: "free",
@@ -182,7 +186,7 @@ export const gymMachines = {
   "lat-pull": {
     id: "lat-pull",
     name: "Lat Pulldown",
-    image: gymImg,
+    image: latPulldownImg,
     type: "Machines",
     zone: "machines",
     count: 4,
@@ -228,6 +232,7 @@ export const gymMachines = {
     name: "Leg Extension Machine",
     type: "Machines",
     zone: "machines",
+    image: legCurlImg,
     count: 3,
     occupied: 0,
     status: "free",
@@ -272,6 +277,7 @@ export const gymMachines = {
     name: "Cable Cross Machine",
     type: "Machines",
     zone: "machines",
+    image: cableMachineImg,
     count: 4,
     occupied: 3,
     status: "busy",
