@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft, Play, CheckCircle2 } from 'lucide-react';
 import { gymMachines } from '../data/mockData';
@@ -7,6 +7,10 @@ const Equipment = () => {
     const { equipmentId } = useParams();
     const navigate = useNavigate();
     const equipment = gymMachines[equipmentId];
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [equipmentId]);
 
     if (!equipment) {
         return (
@@ -65,6 +69,12 @@ const Equipment = () => {
                                     : 'All Busy'}
                             </div>
                         </div>
+                        <button 
+                            onClick={() => navigate(-1)}
+                            className="px-4 py-2 bg-gray-800 text-white rounded -lg shadow-sm hover:bg-gray-900 transition-all flex items-center gap-2"
+                        >
+                            VR Tutorial
+                        </button>
                     </div>
                 </div>
 
